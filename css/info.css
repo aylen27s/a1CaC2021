@@ -1,0 +1,23 @@
+@import 'style.css';
+
+main{
+	align-items: center;
+}
+
+main img{
+	height: 300px;
+	margin-right:100px;
+}
+
+main section{
+	margin: 0px 40px 0px 120px;
+}
+
+.ubicacion{
+	text-align: center;
+}
+
+.ubicacion iframe{
+	width: 300px;
+	height: 400px;
+}

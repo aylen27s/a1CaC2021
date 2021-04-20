@@ -1,0 +1,39 @@
+*{
+	margin:0px;
+	padding:0px;
+ }
+
+ :root{
+ 	/*colores*/
+ 	--boton: #FFE660;
+ 	--header: #FFDF33;
+ 	--footer:#FFF5C0;
+ 	--titulo: #353535;
+ }
+
+header{
+	background: var(--header);
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+}
+
+header nav a{
+	margin:0px 10px;
+	text-decoration: none;
+}
+h1, h3{
+	color:var(--titulo);
+}
+main{
+	display: flex;
+	height: 80vh;
+}
+
+footer{
+	background: var(--footer);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+}

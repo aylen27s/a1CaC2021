@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+
     <meta charset="utf-8">
-    <title></title>
+    <link rel="icon" type="image/svg+xml" href="book-solid.svg" sizes="any">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+    <title>Contacto | MateTutor</title>
+
   </head>
+
   <body>
-    <header align="center">
-      <h1>Titulo</h1>
+
+    <header>
+
+      <h1>MATE TUTOR</h1>
       <nav>
-        <a href="./index.html" style="margin:20px">HOME </a>
-        <a href="./info.html" style="margin:20px">INFORMACIÓN </a>
-        <a href="./contact.html" style="margin:20px">CONTACTO </a>
+
+        <a href="./index.html">HOME </a>
+        <a href="./info.html">INFORMACIÓN </a>
+        <a href="./contact.html">CONTACTO </a>
+
       </nav>
+
     </header>
-    <main align="center" style="margin:40px">
-      <h3>Contactanos</h3>
-      <form action="#" method="post"  >
-        <input type="text" name="name" value="nombre" palceholder="Nombre"><br>
-        <input type="text" name="ltname" value="apellido" palceholder="Apellido"><br>
-        <input type="email" name="email" value="email" palceholder="Correo electrónico"><br>
-        <textarea name="msj" rows="8" cols="20" resize="disabled"></textarea><br>
-        <input type="submit" name="enviar" value="Enviar">
+
+    <main>
+      
+      <form action="show_data.html" target="_blank">
+        <input type="text" id="name" name="nombre"placeholder="Nombre"><br>
+        <input type="text" id="ltname" name="apellido" placeholder="Apellido"><br>
+        <input type="email" id="email" name="correo" placeholder="Correo electrónico"><br>
+        <textarea name="msj" id="msj" placeholder="Escriba aqui..."></textarea><br>
+        <input type="submit" value="Enviar">
       </form>
+
+      <div>
+        <h3>Contactanos</h3>
+        <p>Te pondremos en contacto con el tutor mas adecuado  a tus necesidades.</p>
+      </div>
+
     </main>
-    <footer align="center">
-      <i> © 2021</i>
+
+    <footer> 
+      <strong>MateTutor © 2021</strong>
+      <i>MateTutor es un proytecto ficticio creado a fines prácticos</i>
     </footer>
+
   </body>
 </html>

@@ -1,0 +1,14 @@
+@import 'style.css';
+
+main{
+	align-items: center;
+}
+main img{
+	height: 250px;
+	margin-left:100px;
+}
+
+main section{
+	margin: 0px 120px 0px 40px;
+}
+
