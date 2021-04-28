@@ -1,6 +1,9 @@
 *{
 	margin:0px;
 	padding:0px;
+	box-sizing: border-box;
+	font-family: "Helvetica", sans-serif;
+
  }
 
  :root{
@@ -9,6 +12,7 @@
  	--header: #FFDF33;
  	--footer:#FFF5C0;
  	--titulo: #353535;
+	--gris:#2E2E2E;
  }
 
 header{
@@ -20,13 +24,15 @@ header{
 header nav a{
 	margin:0px 10px;
 	text-decoration: none;
+	color:var(--gris);
 }
 h1, h3{
 	color:var(--titulo);
 }
+
 main{
-	display: flex;
-	height: 80vh;
+	min-height: 80vh;
+	font-size: 14px;
 }
 
 footer{
@@ -36,4 +42,15 @@ footer{
 	align-items: center;
 	justify-content: center;
 	height: 20vh;
+	min-height: 150px;
+}
+
+.rrss i{
+	font-size: 1.5em;
+	color:var(--gris);
+	margin:10px;
+}
+
+a:active{
+	color:#fff;
 }
