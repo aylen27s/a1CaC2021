@@ -1,14 +1,20 @@
 @import 'style.css';
 
 
-img{
-	height: 200px;
+.info img{
+	display: block;
+	height: 250px;
 	width: auto;
 }
 
 .info{
 	display: flex;
 	padding: 40px 100px;
+	align-items: center;
+}
+
+.info span{
+	margin: 0 20px;
 }
 
 .ubicacion{
@@ -19,4 +25,10 @@ img{
 	width: 300px;
 	height: 400px;
 	padding: 20px 0px 100px 0px;
+}
+
+@media(max-width:700px){
+	.info{
+		flex-direction: column;
+	}
 }
