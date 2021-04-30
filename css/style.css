@@ -1,56 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;800;900&display=swap');
+
 *{
 	margin:0px;
 	padding:0px;
 	box-sizing: border-box;
-	font-family: "Helvetica", sans-serif;
-
+	font-family: 'Nunito','Helvetica', sans-serif;
  }
 
  :root{
  	/*colores*/
  	--boton: #FFE660;
- 	--header: #FFDF33;
- 	--footer:#FFF5C0;
+ 	--main-color: #FFDF33;
+ 	--gris-oscuro:#2E2E2E;
  	--titulo: #353535;
-	--gris:#2E2E2E;
+	--color:#FFF5C0;
+	--blanco:#fff;
  }
 
 header{
-	background: var(--header);
+	background: var(--main-color);
 	text-align: center;
 	padding: 40px 0px 40px 0px;
 }
 
 header nav a{
-	margin:0px 10px;
+	margin:0px 20px;
 	text-decoration: none;
-	color:var(--gris);
+	color:var(--gris-oscuro);
 }
+
+header nav a:hover{
+	transition: 0.2s all ease-out;
+	color:var(--blanco);
+	border-bottom: 1px solid  var(--blanco);
+}
+
 h1, h3{
 	color:var(--titulo);
 }
 
 main{
 	min-height: 80vh;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 footer{
-	background: var(--footer);
+	background: var(--gris-oscuro);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 20vh;
 	min-height: 150px;
+	color: var(--blanco)
+}
+
+footer p:first-of-type {
+	font-weight: 800;
+	font-size: 1.2em;
 }
 
 .rrss i{
 	font-size: 1.5em;
-	color:var(--gris);
+	color:var(--main-color);
 	margin:10px;
 }
 
 a:active{
 	color:#fff;
+}
+
+@media (max-width:500px) {
+	header nav{
+		transition: 0.2s all ease-out;
+		display: flex;
+		flex-direction: column;
+	}
+	header nav a{
+		margin-top:10px;
+	}
 }

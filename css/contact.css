@@ -11,7 +11,7 @@ main{
 	flex-direction: column;
 	width: 400px;
 	padding: 20px;
-	background: var(--footer);
+	background: var(--color);
 }
 
 input[type="text"],input[type="email"]{
@@ -36,9 +36,17 @@ textarea{
 input[type="submit"]{
 	width: 100%;
 	height: 40px;
-	background: var(--boton);
 	border:none;
+	background: var(--blanco);
+	cursor: pointer;
+	font-weight: 800;
 }
+
+input[type="submit"]:hover{
+	transition: 0.2s all ease-out;
+	background: var(--boton);
+}
+
 #contacto label{
 	margin: 5px 0px;
 }
@@ -47,6 +55,14 @@ input[type="submit"]{
 	width: 50vw;
 }
 
+.contacto-txt img{
+	width: 80%;
+	margin-top:100px;
+}
+
+.sub-title{
+	font-weight: 800;
+}
 @media(max-width:800px){
 	main{
 		flex-direction: column;

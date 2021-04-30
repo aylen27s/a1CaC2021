@@ -13,14 +13,14 @@
 
     <header>
 
-      <h1>MATE TUTOR</h1>
+      <h1>MateTutor</h1>
       <nav>
 
         <a href="./index.html" >HOME </a>
-        <a href="./info.html">INFORMACIÓN </a>
-        <a href="./contact.html">CONTACTO </a>
         <a href="./cursos.html">CURSOS </a>
         <a href="./recursos.html">RECURSOS</a>
+        <a href="./info.html">INFORMACIÓN </a>
+        <a href="./contact.html">CONTACTO </a>
 
       </nav>
 
@@ -31,23 +31,24 @@
       <div class="contacto-txt">
         <h3>Contactanos</h3>
         <p>Te pondremos en contacto con el tutor mas adecuado  a tus necesidades.</p>
+        <img src="./img/2.jpg" alt="">
       </div>
 
       <form id="contacto" action="show_data.html" target="_blank">
-        <label>Tus datos</label>
+        <label class="sub-title" >Tus datos</label>
         <input type="text" id="name" name="nombre"placeholder="Nombre">
         <input type="text" id="ltname" name="apellido" placeholder="Apellido">
         <input type="email" id="email" name="correo" placeholder="Correo electrónico">
         <br>
-        <label>Tutoría para:</label>
-        <label><input type="radio" name="opcion" value="2">Fisica</label>
-        <label><input type="radio" name="opcion" value="1">Matematica</label>
-        <label><input type="radio" name="opcion" value="0">Programación</label>
+        <label class="sub-title">Tutoria para...</label>
+        <label><input type="radio" name="opcion" value="fisica">Fisica</label>
+        <label><input type="radio" name="opcion" value="mate">Matematica</label>
+        <label><input type="radio" name="opcion" value="prog">Programación</label>
         <br>
-        <label>Dejanos tus comentarios</label>
+        <label class="sub-title">Dejanos tus comentarios</label>
         <textarea name="msj" id="msj" placeholder="Escriba aqui..."></textarea>
         <br>
-        <label><input type="checkbox" name="newsletter" value="newsletter">Quiero enterarme de los nuevos cursos</label>
+        <label><input type="checkbox" name="newsletter" >Quiero enterarme de los nuevos cursos</label>
         <br>
         <input type="submit" value="Enviar">
       </form>
@@ -58,11 +59,11 @@
 
     <footer>
       <div class="rrss">
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
-      <strong>MateTutor © 2021</strong>
-      <i>MateTutor es un proytecto ficticio creado para fines prácticos</i>
+      <p>MateTutor © 2021</p>
+      <p>MateTutor es un proytecto ficticio creado para fines prácticos</p>
     </footer>
 
   </body>

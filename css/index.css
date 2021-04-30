@@ -1,20 +1,29 @@
 @import 'style.css';
-
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 main div{
 	display: flex;
 	align-items: center;
-	margin: 40px 100px;
+	justify-content: center;
+	width: 80vw;
+	margin: 40px 0px;
 }
 
 div span{
-	margin: 0 20px;
+	margin:20px;
 	width: auto;
 }
 
 img{
 	display: block;
-	height: 200px;
+	height: 20vw;
+	min-height: 200px;
 	width: auto;
+	box-shadow: -10px 10px 0px var(--color);
 }
 
 
