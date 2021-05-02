@@ -20,7 +20,8 @@
 header{
 	background: var(--main-color);
 	text-align: center;
-	padding: 40px 0px 40px 0px;
+	padding: 40px 0px 40px 0px;*/
+	font-size: 16px;
 }
 
 header nav a{
@@ -50,6 +51,7 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	height: 20vh;
 	min-height: 150px;
 	color: var(--blanco)
@@ -70,7 +72,7 @@ a:active{
 	color:#fff;
 }
 
-@media (max-width:500px) {
+@media only screen and (max-width:800px) {
 	header nav{
 		transition: 0.2s all ease-out;
 		display: flex;
