@@ -23,7 +23,7 @@ img{
 	height: 20vw;
 	min-height: 200px;
 	width: auto;
-	box-shadow: -10px 10px 0px var(--color);
+	box-shadow: -10px 10px 0px var(--lt-color);
 }
 
 

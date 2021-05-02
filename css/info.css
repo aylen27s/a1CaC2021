@@ -22,13 +22,21 @@
 }
 
 .ubicacion iframe{
-	width: 300px;
-	height: 400px;
+	width: 50vw;
+	height: 600px;
 	padding: 20px 0px 100px 0px;
 }
 
 @media(max-width:700px){
 	.info{
 		flex-direction: column;
+	}
+
+	.ubicacion iframe{
+		width: 80vw;
+	}
+
+	.info{
+		padding: 40px 20px;
 	}
 }

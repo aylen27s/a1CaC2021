@@ -9,11 +9,10 @@
 
  :root{
  	/*colores*/
- 	--boton: #FFE660;
- 	--main-color: #FFDF33;
- 	--gris-oscuro:#2E2E2E;
- 	--titulo: #353535;
-	--color:#FFF5C0;
+ 	--main-color: #3BF8FF;
+ 	--bk-color: #006466;
+	--lt-color:#D6FEFF;
+	--gris-oscuro:#2E2E2E;
 	--blanco:#fff;
  }
 
@@ -37,7 +36,7 @@ header nav a:hover{
 }
 
 h1, h3{
-	color:var(--titulo);
+	color:var(--bk-color);
 }
 
 main{

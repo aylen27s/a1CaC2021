@@ -9,9 +9,9 @@ main{
 #contacto{
 	display: flex;
 	flex-direction: column;
-	width: 400px;
-	padding: 20px;
-	background: var(--color);
+	width: 40vw;
+	padding: 40px;
+	background: var(--lt-color);
 }
 
 input[type="text"],input[type="email"]{
@@ -44,7 +44,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
 	transition: 0.2s all ease-out;
-	background: var(--boton);
+	background: var(--main-color);
 }
 
 #contacto label{
@@ -68,8 +68,13 @@ input[type="submit"]:hover{
 		flex-direction: column;
 		align-items: center;
 	}
+
+	#contacto{
+		width: 100vw;
+	}
+
 	.contacto-txt{
-		width: 400px;
 		margin-bottom: 20px;
+		width: 80%;
 	}
 }
