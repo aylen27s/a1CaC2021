@@ -1,1 +1,42 @@
 @import 'style.css';
+
+main{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  transition: 0.2s all ease-out;
+}
+.categorias{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width:300px;
+}
+
+.categorias a{
+  padding: 10px;
+  color: var(--gris-oscuro);
+}
+
+.categorias a:hover{
+  color:var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.recursos{
+  padding: 50px;
+  width:calc(100% - 300px);
+}
+.recursos article{
+  padding-bottom: 40px;
+}
+.recursos article div{
+  display: flex;
+
+  overflow-x: scroll;
+}
+
+.recursos article div iframe{
+  margin: 20px;
+}

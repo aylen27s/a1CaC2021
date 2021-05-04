@@ -25,7 +25,10 @@ img{
 	width: auto;
 	box-shadow: -10px 10px 0px var(--lt-color);
 }
-
+.carousel-item img{
+	object-fit: cover;
+	opacity: 50%;
+}
 
 @media (max-width:700px){
 	main div{
