@@ -11,12 +11,14 @@ a{
   display: flex;
   flex-direction: column;
   padding: 50px;
-  width:300px;
+  width:250px;
+  background: var(--blanco);
 }
 
 .categorias a{
   padding: 10px;
   color: var(--gris-oscuro);
+  transition: 0.2s all ease-out;
 }
 
 .categorias a:hover{
@@ -28,6 +30,7 @@ a{
   padding: 50px;
   width:calc(100% - 300px);
 }
+
 .recursos article{
   padding-bottom: 40px;
 }
