@@ -98,9 +98,9 @@ a:active{
 	header nav a{
 		margin-top:10px;
 	}
-	.nav{
+	/*.nav{
 		display: none;
-	}
+	}*/
 	.nav-icon{
 		display: block;
 	}
