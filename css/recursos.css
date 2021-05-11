@@ -1,29 +1,30 @@
 @import 'style.css';
 
+
 main{
   display: flex;
 }
-a{
+
+.link-cat{
   text-decoration: none;
   transition: 0.2s all ease-out;
+  padding: 10px;
+  color: var(--gris-oscuro);
+  transition: 0.2s all ease-out;
+  margin-right: 10px;
 }
+
+.link-cat:hover{
+  color:var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
 .categorias{
   display: flex;
   flex-direction: column;
   padding: 50px;
   width:250px;
   background: var(--blanco);
-}
-
-.categorias a{
-  padding: 10px;
-  color: var(--gris-oscuro);
-  transition: 0.2s all ease-out;
-}
-
-.categorias a:hover{
-  color:var(--main-color);
-  border-bottom: 1px solid var(--main-color);
 }
 
 .recursos{
@@ -42,4 +43,16 @@ a{
 
 .recursos article div iframe{
   margin: 20px;
+}
+
+@media (max-width:800px){
+  main{
+    flex-direction: column;
+  }
+  .categorias div{
+    display: flex;
+  }
+  .recursos{
+    width: 100%;
+  }
 }

@@ -44,19 +44,19 @@ img{
 	background: #fff;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.control-icon-p
+.control-icon-n {
   background-image: none;
 }
 
-.carousel-control-next-icon:after
+.control-icon-n:after
 {
   content: '>';
   font-size: 40px;
   color: var(--main-color);
 }
 
-.carousel-control-prev-icon:after {
+.control-icon-p:after {
   content: '<';
   font-size: 40px;
   color: var(--main-color);
