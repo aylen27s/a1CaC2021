@@ -26,6 +26,10 @@ main{
   width:250px;
   background: var(--blanco);
 }
+.categorias div{
+  display:flex;
+  flex-direction:column:
+}
 
 .recursos{
   padding: 50px;
@@ -50,7 +54,7 @@ main{
     flex-direction: column;
   }
   .categorias div{
-    display: flex;
+    flex-direction: row;
   }
   .recursos{
     width: 100%;
