@@ -1,5 +1,30 @@
 @import 'style.css';
 
+#head{
+	width: 100%;
+	height: calc(100vh - 80px);
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--gris-oscuro);
+}
+
+.head-txt{
+	background: transparent;
+	position: absolute;
+	text-align: center;
+	font-weight: 600;
+	color: var(--blanco);
+}
+
+#img-bg{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position:center;
+	opacity: 50%;
+}
 
 .info img{
 	display: block;

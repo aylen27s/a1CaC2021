@@ -1,24 +1,62 @@
 @import 'style.css';
+
+
 main{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+}
+
+main aside{
+  width:20vw;
+  min-width: 250px;
+  padding: 0px 40px;
+}
+
+main aside div{
+  display: flex;
+  flex-direction: column;  
+}
+
+.cb-filter{
+  margin:0px 10px 10px 0px;
+}
+
+.line{
+  margin: 20px 0px;
+  width: 100%;
+  border-bottom: solid 1px rgb(0,0,0,0.5);
+}
+#filter{
+  margin:20px 0px;
+  padding:5px 0px;
+  width:50%;
+  border:none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  color:rgb(0,0,0,0.5);
+  transition: 0.2s ease-out;
+}
+
+#filter:hover{
+  border-color:var(--bk-color);
+  color: var(--bk-color);
 }
 
 .cursos{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-gap:50px;
+  padding-bottom: 50px;
 }
 .curso{
   text-decoration: none;
-  width: 400px;
   display: flex;
 }
-
-.curso h3{
+.curso div{
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
+
 .curso h3:hover{
   transition: 0.2s all ease-out;
   color: var(--main-color);
@@ -27,16 +65,22 @@ main{
 .curso img{
   width: 200px;
   height: auto;
-  box-shadow: -10px 10px 0px var(--lt-color);
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
   transition: 0.2s all ease-out;
 }
 
 .curso img:hover{
-  transform: translateY(-5px);
+  transform: translateX(5px);
+}
+small{
+  color:var(--bk-color);
 }
 
 @media (max-width:700px){
-	.cursos{
-		grid-template-columns: auto;
+	main{
+		flex-direction: column;
 	}
+  .cursos{
+    padding:40px;
+  }
 }

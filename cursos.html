@@ -16,7 +16,7 @@
   <body>
 
     <header>
-      <h1>MateTutor</h1>
+      <h1 class="main-title">MateTutor</h1>
       <span class="nav-icon"><i class="fas fa-book"></i></span>
       <nav class="nav">
         <a class="link" href="./index.html" >HOME </a>
@@ -33,7 +33,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <h1>MateTutor</h1>
+        <h1 class="main-title">MateTutor</h1>
       </div>
 
     </nav>
@@ -46,27 +46,58 @@
         <a class="link" href="./contact.html">CONTACTO </a>
       </div>
     </div>
+
+    
+    <h1 class="title">Cursos</h1>
     <main>
+        <aside>
+          <h4>Filtrar por</h4>
+          <div>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="0">Fisica</label>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="1">Matemática</label>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="2">Química</label>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="3">Ilustración</label>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="4">Programación</label>
+            <span class="line"></span>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="5">Nuevos cursos</label>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="6">En vivo</label>
+            <label><input class="cb-filter" type="checkbox" name="cat" value="7">Offline</label>
+          </div>
+          <button id="filter">Filtrar</button>
+        </aside>
+
         <section class="cursos">
 
             <a href="#" class="curso">
               <img src="./img/3.jpg" alt="curso">
-              <h3>Matemática para ingreso a la universidad</h3>
+              <div>
+                <h3>Introdución a la programación</h3>
+                <small>Impartido por Pepito Grillo</small>
+              </div>
             </a>
 
             <a href="#" class="curso">
               <img src="./img/3.jpg" alt="curso">
-              <h3>Matemática para ingreso a la universidad</h3>
+              <div>
+                <h3>Matemática para ingreso a la universidad</h3>
+                <small>Impartido por Pepito Grillo</small>
+              </div>
             </a>
 
             <a href="#" class="curso">
               <img src="./img/3.jpg" alt="curso">
-              <h3>Matemática para ingreso a la universidad</h3>
+              <div>
+                <h3>Fisica para ingreso a la universidad</h3>
+                <small>Impartido por Pepito Grillo</small>
+              </div>
             </a>
 
             <a href="#" class="curso">
               <img src="./img/3.jpg" alt="curso">
-              <h3>Matemática para ingreso a la universidad</h3>
+              <div>
+                <h3>Introducción al dibujo digital</h3>
+                <small>Impartido por Pepito Grillo</small>
+              </div>
             </a>
 
 
