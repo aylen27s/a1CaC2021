@@ -30,6 +30,7 @@ main aside div{
   margin:20px 0px;
   padding:5px 0px;
   width:50%;
+  background: transparent;
   border:none;
   border-bottom: 1px solid rgba(0,0,0,0.5);
   color:rgb(0,0,0,0.5);
@@ -82,5 +83,13 @@ small{
 	}
   .cursos{
     padding:40px;
+  }
+  .curso img{
+    width: auto;
+    height: 100px;
+  }
+  .curso div{
+    padding: 0;
+    margin-left: 20px;
   }
 }
