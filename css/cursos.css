@@ -38,19 +38,25 @@ main aside div{
 }
 
 #filter:hover{
-  border-color:var(--bk-color);
-  color: var(--bk-color);
+  border-color:var(--main-color);
+  color: var(--main-color);
 }
 
-.cursos{
+/*.cursos{
   display: grid;
   grid-template-columns: auto;
   grid-gap:50px;
   padding-bottom: 50px;
+}*/
+.cursos{
+  display: flex;
+  flex-direction: column;
+  
 }
 .curso{
   text-decoration: none;
   display: flex;
+  margin-bottom: 40px;
 }
 .curso div{
   display: flex;
@@ -77,12 +83,15 @@ small{
   color:var(--bk-color);
 }
 
-@media (max-width:700px){
-	main{
-		flex-direction: column;
-	}
+@media (min-width: 380px) and (max-width:700px){
+  main{
+    flex-direction: column;
+  }
   .cursos{
     padding:40px;
+  }
+  .curso{
+    margin-bottom: 40px;
   }
   .curso img{
     width: auto;
@@ -94,20 +103,25 @@ small{
   }
 }
 
-@media (max-width:380px){
-  main{
+@media (max-width:500px){
+    main{
       flex-direction: column;
     }
     .cursos{
+      width: 100vw;
+      align-items: center;
+    }
+    .curso{
+      width: 70vw;
       flex-direction: column;
-      padding:40px;
+      align-items: center;
     }
     .curso img{
-      width: 100vw;
+      width: 100%;
       height: auto;
     }
     .curso div{
-      width: 100vw;
-      margin-top;20px;
+      padding: 0;
+      margin:40px 0px 60px 0px;
     }
 }
